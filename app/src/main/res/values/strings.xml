@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name">Tarea1</string>
+    <string name="activity_main_name">Nombre</string>
+    <string name="activity_main_name_hint">Ingrese su nombre</string>
+    <string name="activity_main_phone">Teléfono</string>
+    <string name="activity_main_phone_hint">Ingrese su teléfono</string>
+    <string name="activity_main_scholarship">Escolaridad</string>
+    <string name="activity_main_gender">Género</string>
+    <string name="activity_main_gender_male">Masculino</string>
+    <string name="activity_main_gender_female">Femenino</string>
+    <string name="activity_main_book">Libro favorito</string>
+    <string name="activity_main_clear">Limpiar</string>
+    <string name="activity_main_sport">Practica deporte</string>
+
+    <string-array name="scholarships_array">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+
+    <string-array name="books_array">
+        <item>Cracking the coding interview</item>
+        <item>Data structures using C</item>
+        <item>Introduction to algorithms</item>
+        <item>Hello, Android</item>
+        <item>The big nerd ranch guide</item>
+    </string-array>
+
+
+</resources>

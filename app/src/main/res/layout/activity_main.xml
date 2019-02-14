@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="@dimen/layout_padding">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/activity_main_name_hint"
+                android:inputType="textCapWords"
+                android:imeOptions="actionSend"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:hint="@string/activity_main_phone_hint"
+                android:inputType="phone"
+                android:imeOptions="actionSend"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_main_scholarship"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/scholarship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_main_gender"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radioG_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioG_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_gender_female"
+                    android:checked="true"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/radioG_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_gender_male"
+                    android:layout_weight="2"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_main_book"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black" />
+
+            <AutoCompleteTextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/autocomplete_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:imeOptions="actionSend"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/activity_main_sport"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/activity_main_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_main_clear"
+                android:layout_gravity="bottom"
+                android:onClick="clear"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
